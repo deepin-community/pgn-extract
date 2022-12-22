@@ -1,0 +1,23 @@
+Description: fix privacy-breach-generic lintian warning
+Author: Vincent Legout <vlegout@debian.org>
+
+Index: pgn-extract/index.html
+===================================================================
+--- pgn-extract.orig/index.html
++++ pgn-extract/index.html
+@@ -12,15 +12,6 @@
+ 			Database
+ 			pgn-extract">
+         <link href="style.css" rel="stylesheet" type="text/css" media="all">
+-        <!-- Global site tag (gtag.js) - Google Analytics -->
+-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2248758-2"></script>
+-        <script>
+-          window.dataLayer = window.dataLayer || [];
+-          function gtag(){dataLayer.push(arguments);}
+-          gtag('js', new Date());
+-
+-          gtag('config', 'UA-2248758-2');
+-        </script>
+ </head>
+ <body>
+ <div id="body">

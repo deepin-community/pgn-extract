@@ -1,0 +1,19 @@
+Source: pgn-extract
+Section: games
+Priority: optional
+Maintainer: Vincent Legout <vlegout@debian.org>
+Build-Depends: debhelper (>= 11~)
+Standards-Version: 4.3.0
+Homepage: http://www.cs.kent.ac.uk/people/staff/djb/pgn-extract/
+Vcs-Browser: https://salsa.debian.org/vlegout/pgn-extract
+Vcs-Git: https://salsa.debian.org/vlegout/pgn-extract.git
+
+Package: pgn-extract
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Portable Game Notation (PGN) extractor
+ Pgn-extract is a program to extract selected games from a collection of
+ chess games in PGN format. There are several ways to specify the criteria
+ on which to extract: textual move sequences, the position reached after a
+ sequence of moves, information in the tag fields, and material balance in
+ the ending.

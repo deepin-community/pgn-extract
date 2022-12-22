@@ -1,0 +1,173 @@
+pgn-extract (19.04-1) unstable; urgency=medium
+
+  * New upstream release
+    - manpage now upstream, remove it from debian/
+  * Update patches:
+    - remove debian/patches/makefile.patch, applied upstream
+    - refresh debian/patches/privacy.patch, partially applied upstream
+  * Standards-Version 4.3.0
+  * Add debian/gitlab-ci.yml
+
+ -- Vincent Legout <vlegout@debian.org>  Tue, 07 May 2019 07:45:10 +0200
+
+pgn-extract (18.10-1) unstable; urgency=medium
+
+  * New upstream release
+    - Update get-orig-source target
+  * patches: rename remove_iframe.patch to privacy.patch, and update to remove
+    Google Analytics
+  * Set Vcs fields to salsa.debian.org
+
+ -- Vincent Legout <vlegout@debian.org>  Tue, 13 Nov 2018 06:43:01 +0100
+
+pgn-extract (18.08-1) unstable; urgency=medium
+
+  * New upstream release
+    - Update get-orig-source target
+  * Standards-Version 4.2.1
+  * Update to debhelper 11
+  * debian/copyright: refresh copyright years, use https urls
+  * debian/rules: add hardening flags
+  * add debian/patches/remove_iframe.patch to remove iframe with remote mp4
+  * install style.css, add it in debian/docs
+
+ -- Vincent Legout <vlegout@debian.org>  Sat, 20 Oct 2018 07:05:42 +0200
+
+pgn-extract (17.55-1) unstable; urgency=medium
+
+  * New upstream release
+    - Update get-orig-source target
+    - Refresh makefile.patch
+  * Standards-Version 4.1.2
+  * pgn-extract is now under GPL-3+
+
+ -- Vincent Legout <vlegout@debian.org>  Sun, 17 Dec 2017 12:46:54 +0100
+
+pgn-extract (17.21-1) unstable; urgency=medium
+
+  * New upstream release
+    - Update get-orig-source target
+    - Refresh makefile.patch
+  * debian/copyright: Update copyright years
+  * Standards-Version 3.9.6
+  * Install index.html
+
+ -- Vincent Legout <vlegout@debian.org>  Thu, 28 May 2015 16:08:02 -0400
+
+pgn-extract (17.14-1) unstable; urgency=low
+
+  * New upstream release
+  * Update get-orig-source target
+  * debian/patches/makefile.patch: Do not build with -03 by default and build
+    using $(CPPFLAGS)
+
+ -- Vincent Legout <vlegout@debian.org>  Sun, 29 Sep 2013 14:07:42 +0200
+
+pgn-extract (17.13-1) unstable; urgency=low
+
+  * New upstream version
+  * debian/rules: Add get-orig-source target
+  * Set debhelper compatibility to 9
+  * Standards-Version 3.9.4, no changes needed
+  * Add makefile.patch to enable hardening flags
+  * debian/copyright:
+    - Use copyright format 1.0
+    - Update copyright years
+    - Add a paragraph for style.css
+  * debian/pgn-extract.man: Updated, do not list all options, point to
+    help.html instead.
+
+ -- Vincent Legout <vlegout@debian.org>  Sun, 19 May 2013 20:06:54 +0200
+
+pgn-extract (16.7-2) unstable; urgency=low
+
+  * debian/copyright:
+    - Update to new DEP5 revision, some fields have been renamed
+    - Remove the complete GPL-1 text and refer to
+    /usr/share/common-licenses/GPL-1 instead.
+  * debian/control:
+    - Bump to Standards-Version 3.9.2 (No changes required)
+    - Update my email address
+
+ -- Vincent Legout <vlegout@debian.org>  Mon, 07 Nov 2011 20:45:03 +0100
+
+pgn-extract (16.7-1) unstable; urgency=low
+
+  * New upstream release
+  * New maintainer (Closes:# 561252)
+  * debian/compat: Bumped to 7
+  * debian/control:
+    - Add myself in Maintainer
+    - Add Homepage field
+    - Bump Standards-Version to 3.8.3
+    - Add ${misc:Depends}
+  * debian/copyright: Updated to DEP-5
+  * debian/doc-base: Update Section
+  * debian/dirs: Removed
+  * debian/docs: Add help.html, Remove README
+  * debian/lintian: Removed
+  * debian/pgn-extract.man: Remove reference to README, Fix lintian warnings
+  * debian/rules: Rewritten using dh
+    - Add pgn-extract.install, pgn-extract.manpages
+  * debian/watch: Added
+  * Switch to 3.0 (quilt) source format
+
+ -- Vincent Legout <vincent@legout.info>  Mon, 04 Jan 2010 21:28:07 +0100
+
+pgn-extract (16.0-1) unstable; urgency=low
+
+  * New upstream version: a few bug fixes and the - Welalg flag.
+  * Updated manual page.
+  * Updated standards version.
+
+ -- Peter van Rossum <petervr@debian.org>  Mon, 11 Sep 2006 07:53:11 +0200
+
+
+pgn-extract (15.0-4) unstable; urgency=low
+
+  * Fixed short description.
+
+ -- Peter van Rossum <petervr@debian.org>  Tue, 18 Jan 2005 19:50:45 +0100
+
+
+pgn-extract (15.0-3) unstable; urgency=low
+
+  * Fixed compiler warnings.
+  * Updated policy to 3.6.1.
+  * Rephrased copyright file and referred to new FSF address.
+
+ -- Peter van Rossum <petervr@debian.org>  Wed, 24 Dec 2003 20:54:45 -0800
+
+
+pgn-extract (15.0-2) unstable; urgency=low
+
+  * Registered documentation with the documentation system.
+  * Removed the (debhelper) /usr/doc symlink handling.
+
+ -- Peter van Rossum <petervr@debian.org>  Thu, 17 Apr 2003 13:08:27 -0600
+
+pgn-extract (15.0-1) unstable; urgency=low
+
+  * New upstream version (finally uploaded).
+
+ -- Peter van Rossum <petervr@debian.org>  Tue, 23 Oct 2001 12:21:40 -0700
+
+pgn-extract (13.8-2) unstable; urgency=low
+
+  * Changed section to games.
+  * Fixed default location of eco-file. (Closes: #93282)
+
+ -- Peter van Rossum <petervr@debian.org>  Mon,  9 Apr 2001 21:54:26 +0200
+
+pgn-extract (13.8-1) unstable; urgency=low
+
+  * New upstream version.
+  * Closing the ITP bug against wnpp. (Closes: #90978)
+
+ -- Peter van Rossum <petervr@debian.org>  Sun, 25 Mar 2001 14:14:12 +0200
+
+pgn-extract (13.6-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Peter van Rossum <petervr@sci.kun.nl>  Sat, 10 Mar 2001 20:13:16 +0100

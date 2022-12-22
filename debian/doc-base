@@ -1,0 +1,9 @@
+Document: pgn-extract
+Title: Pgn-extract
+Author: David Barnes
+Abstract: Portable Game Notation (PGN) extractor
+Section: Games/Board
+
+Format: HTML
+Index: /usr/share/doc/pgn-extract/index.html
+Files: /usr/share/doc/pgn-extract/index.html /usr/share/doc/pgn-extract/help.html

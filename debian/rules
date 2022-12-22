@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+VERSION=19.04
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+%:
+	dh $@
+
+get-orig-source:
+	wget ftp://ftp.cs.kent.ac.uk/pub/djb/pgn-extract/pgn-extract.tgz
+	tar zxvf pgn-extract.tgz
+	mv pgn-extract pgn-extract-$(VERSION)
+	tar czf pgn-extract_$(VERSION).orig.tar.gz pgn-extract-$(VERSION)
+	rm -rf pgn-extract-$(VERSION) pgn-extract.tgz

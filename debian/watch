@@ -1,0 +1,3 @@
+version=3
+opts="uversionmangle=s/-/./" \
+ftp://ftp.cs.kent.ac.uk/pub/djb/Extract/pgn-extract-(.*)\.tgz
